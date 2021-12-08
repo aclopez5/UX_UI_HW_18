@@ -34,7 +34,105 @@ nav li a:hover {
     font-weight: bold;
 }
 /* body css */
+.hero {
+    width: 85%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 2fr;
+    grid-template-areas: 
+    "h1 img"
+    "bio img";
+    grid-column-gap: 80px;
+    margin: 0 auto;
+    min-height: 100%;
+}
+h1 {
+    grid-area: h1;
+    display: inline-block;
+    font-size: 47px;
+    grid-column-end: 1;
+    font-family: "Gelasio", serif;
+    padding-bottom: 20px;
+}
+.heroImg {
+    grid-area: img;
+}
+.heroTxt {
+    grid-area: bio;
+    display: inline-block;
+    width: 538px;
+    height: 610px;
+    font-size: 28px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.btn {
+    background-color: #A30003;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 15px 40px;
+    border: 2px solid transparent;
+    margin: 40px 150px;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+.btn:hover {
+    transform: scale(1.2);
+}
 
+.projects {
+    width: 85%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 2fr 2fr 2fr 2fr;
+    grid-template-areas: 
+    "h2 h2"
+    "OYimg OY"
+    "Paw Pawimg"
+    "VKimg VK"
+    "DOE DOEimg";
+    grid-column-gap: 80px;
+    grid-row-gap: 80px;
+    margin: 0 auto;
+    min-height: 100%;
+}
+h2 {
+    grid-area: h2;
+    font-size: 38px;
+    font-family: "Gelasio", serif;
+    grid-column-end: 1;
+}
+.OYimg {
+    grid-area: OYimg;
+}
+.OY {
+    grid-area: OY;
+}
+.Pawimg {
+    grid-area: Pawimg;
+}
+.Paw {
+    grid-area: Paw;
+}
+.VKimg {
+    grid-area: VKimg;
+}
+.VK {
+    grid-area: VK;
+}
+.DOEimg {
+    grid-area: DOEimg;
+}
+.DOE {
+    grid-area: DOE;
+}
+h3 {
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #A30003;
+}
 /* footer css */
 footer {
     background-color: #2A2E2E;
